@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Admin Panel</title>
+</head>
+<body>
+    <div class="container">
+        <section class="students">
+            <header class="header students__header">
+                <h2 class="heading">Students List</h2>
+            </header>
+            <section class="content students__content" id="studentsSection">
+                <ul class="students__list" id="students__list">
+
+                </ul><!--students__list-->
+            </section><!--students__content-->
+        </section><!--students-->
+        <section class="info">
+            <header class="header info__header">
+                <h2 class="heading">Student Info</h2>
+            </header><!--info__header-->  
+            <section class="content info__content" id="info__content">
+                <table class="info__content__table" cellspacing="0" cellpadding="0" id="studentsTable">
+                    <tr>
+                        <td>First Name:</td>
+                        <td><input type="text" name="firstname" id="firstname" disabled></td>
+                    </tr>
+                    <tr>
+                        <td>Last Name:</td>
+                        <td><input type="text" name="lastname" id="lastname" disabled></td>
+                    </tr>
+                    <tr>
+                        <td>Age:</td>
+                        <td><input type="text" name="age" id="age" disabled></td>
+                    </tr>
+                    <tr>
+                        <td>Gender:</td>
+                        <td><input type="text" name="gender" id="gender" disabled></td>
+                    </tr>
+                    <tr>
+                        <td>Phone:</td>
+                        <td><input type="text" name="phone" id="phone" disabled></td>
+                    </tr>
+                    <tr>
+                        <td>Adress:</td>
+                        <td><input type="text" name="address" id="address" disabled></td>
+                    </tr>
+                </table><!--info__content__table-->
+                <section class="info__content__section">
+                    <header class="header info__content__section__header">
+                        <h2 class="heading">Scores</h2>
+                    </header><!--info__content__section__header-->
+                    <section class="content info__content__section__content" id="scores_info_section">                        
+                        
+                    </section><!--info__content__section__content-->
+                    <section class="content info__content__section__info">
+                        <div>Total Scores: <span id="totalScoreOutput"></span></div>
+                        <div>Grade: <span id="gradeOutput"></span></div>
+                    </section><!--info__content__section-->
+                </section><!--info__content__section-->                
+            </section><!--info__content--> 
+            <button class="info__btn" id="editBtn">Edit</button>  
+            <button class="info__btn info__btn--clear" id="clearBtn">Clear</button>
+        </section><!--info-->
+        <section class="registration" id="registration">
+            <header class="header registration__header">
+                <h2 class="heading">Student Registration</h2>
+            </header>
+            <section class="content registration__content">
+                <ul class="registration__content__list" id="register__list">
+                    <li class="registration__content__list__item">
+                        <input type="text" name="register_firstname" id="register_firstname" placeholder="First Name">
+                    </li>
+                    <li class="registration__content__list__item">
+                        <input type="text" name="register_lastname" id="register_lastname" placeholder="Last Name">
+                    </li>
+                    <li class="registration__content__list__item">
+                        <input type="text" name="register_age" id="register_age" placeholder="Age">
+                    </li>
+                    <li class="registration__content__list__item">
+                        <input type="text" name="register_gender" id="register_gender" placeholder="Gender">
+                    </li>
+                    <li class="registration__content__list__item">
+                        <input type="text" name="register_phone" id="register_phone" placeholder="Phone">
+                    </li>
+                    <li class="registration__content__list__item">
+                        <input type="text" name="register_address" id="register_address" placeholder="Address">
+                    </li>
+                    <li class="registration__content__list__item registration__content__list__item--scores" id="scoresContItem">
+                        <section class="content registration__content__list__item--scores__content" id="scores_container">
+                            
+                        </section>
+                        <input type="text" name="register_score" id="register_score" placeholder="Enter Score">
+                        <!-- <input type="button" name="" id="" value="Add"> -->
+                        <button id="addBtn">Add</button>
+                    </li>
+                </ul><!--registration__content__list-->
+                <button class="registration__content__btn" id="registerBtn">Add Student</button>
+            </section><!--registration__article-->
+        </section><!--registration-->
+    </div><!--container-->
+</body>
+</html>
+<script src="js/scripts.js"></script>
