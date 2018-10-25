@@ -370,6 +370,9 @@ const Students = {
         while(itemsLength--) {
             items[itemsLength].parentNode.removeChild(items[itemsLength])
         }
+        Students.clearInputs(document.getElementById("info__content"));
+        Students.totalScoreOutput.innerHTML = "";
+        Students.gradeOutput.innerHTML = "";
     }
 }//Students
 Students.createBase();
